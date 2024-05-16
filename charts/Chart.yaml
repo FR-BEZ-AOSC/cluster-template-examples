@@ -1,7 +1,7 @@
 apiVersion: v1
-name: outscale cluster-template
+name: outscale-cluster-template
 description: Cluster template for outscale rke2
-version: 0.0.3
+version: 0.0.4
 annotations:
   catalog.cattle.io/type: cluster-template
   catalog.cattle.io/namespace: fleet-default
