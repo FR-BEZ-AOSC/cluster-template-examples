@@ -8,9 +8,10 @@ metadata:
 {{- if $nodepool.sourceOmi }}
 sourceOmi: {{ $nodepool.sourceOmi }}
 {{- end }}
-{{- if $nodepool.rootDiskSize }}
-rootDiskSize: {{ printf "\"%s\"" $nodepool.rootDiskSize }}
-{{- end }}
+# {{- if $nodepool.rootDiskSize }}
+# rootDiskSize: {{ printf "\"%s\"" $nodepool.rootDiskSize }}
+# {{- end }}
+rootDiskSize: "20"
 region: null
 rootDiskIops: "1500"
 rootDiskType: gp2
