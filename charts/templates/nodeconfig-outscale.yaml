@@ -18,7 +18,7 @@ rootDiskType: gp2
 secretKey: null
 securityGroupIds: []
 {{- if $nodepool.subnetId }}
-subnetId: $nodepool.subnetId
+subnetId: {{ $nodepool.subnetId }}
 {{- end }}
 {{- end }}
 {{- end }}
