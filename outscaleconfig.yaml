@@ -1,0 +1,34 @@
+accessKey: null
+apiVersion: rke-machine-config.cattle.io/v1
+extraTagsAll: []
+extraTagsInstances: []
+instanceType: tinav6.c4r8p1
+kind: OutscaleConfig
+kubernetesNodeNameAutotag: true
+metadata:
+  annotations:
+    field.cattle.io/creatorId: user-xmztt
+    ownerBindingsCreated: "true"
+  creationTimestamp: "2024-05-15T22:57:40Z"
+  generateName: nc-singlenodetest-masteraorkerpool-
+  generation: 2
+  name: nc-singlenodetest-masteraorkerpool-kkkqb
+  namespace: fleet-default
+  ownerReferences:
+  - apiVersion: provisioning.cattle.io/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Cluster
+    name: singlenodetest
+    uid: 36bcc285-ad51-4d4a-af9c-ef36b3696a50
+  resourceVersion: "11983583973"
+  uid: f5285726-afe9-4756-ba6a-488964a65f60
+region: null
+rootDiskIops: "1500"
+rootDiskSize: "20"
+rootDiskType: gp2
+secretKey: null
+securityGroupIds: []
+sourceOmi: ami-a3ca408c
+subnetId: subnet-90bdb20d
+userDataFile: null

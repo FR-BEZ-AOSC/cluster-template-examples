@@ -1,0 +1,23 @@
+{{- if eq .Values.cloudprovider "outscale" }}
+{{- range $index, $nodepool := .Values.nodepools }}
+apiVersion: rke-machine-config.cattle.io/v1
+kind: OutscaleConfig
+metadata:
+  name: {{ $nodepool.name }}
+  namespace: fleet-default
+{{- if $nodepool.sourceOmi }}
+sourceOmi: {{ $nodepool.sourceOmi }}
+{{- end }}
+{{- if $nodepool.rootDiskSize }}
+rootDiskSize: {{ $nodepool.rootDiskSize }}
+{{- end }}
+region: null
+rootDiskIops: "1500"
+rootDiskType: gp2
+secretKey: null
+securityGroupIds: []
+{{- if $nodepool.subnetId }}
+subnetId: $nodepool.subnetId
+{{- end }}
+{{- end }}
+{{- end }}
