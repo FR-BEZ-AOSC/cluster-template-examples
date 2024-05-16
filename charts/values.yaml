@@ -1,7 +1,7 @@
 # cluster specific values
 cluster:
   # specify cluster name
-  name: template-rke2
+  name: fast-rke2
 
   # specify cluster labels
   labels: {}
@@ -31,7 +31,7 @@ nodepools:
   paused: false
 
   sourceOmi: ami-a3ca408c
-  rootDiskSize: "20"
+  rootDiskSize: 20
   subnetId: subnet-90bdb20d
 
   # specify rolling update mechanism
